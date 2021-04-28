@@ -72,7 +72,7 @@ DarkMan.on("guildMemberAdd", member => {
   let DarkMan = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
-    .setTitle(``)
+    .setTitle(`hello sir`)
     .setAuthor(`${member.guild.name}`, ``)
     .setColor("RANDOM") 
     .setThumbnail(DarkMan)
@@ -82,8 +82,9 @@ DarkMan.on("guildMemberAdd", member => {
     ◈ ━━━━━━━ ⸙ ━━━━━━━ ◈`
     )
     .addField(
-      "**Welcome**",
-      `Welcome to the server, ${member}
+      "wellcome",
+      `> ${member} wellcome to
+      > __${member.guild.name}__ we hope you enjoy with us.
     ◈ ━━━━━━━ ⸙ ━━━━━━━ ◈`
     )
     .addField(
