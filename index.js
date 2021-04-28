@@ -8,7 +8,16 @@ const color = "#303135";
 client.login(config.token);
 
 
-
+client.on('ready', () => {
+    console.log('MrFox is ready')
+    client.user.setPresence({
+        activity: {
+            type: "PLAYING",
+            name: `Mr.Fox Development`
+        }, 
+        status: "idle"
+    })
+});
 
 
 
@@ -18,7 +27,7 @@ client.login(config.token);
 
 client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "rules"
+    channel => channel.name === "┃ᴡᴇʟᴄᴏᴍᴇ"
   );
   let DarkMan = member.user.avatarURL();
   if (!channel) return;
