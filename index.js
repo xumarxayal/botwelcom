@@ -5,7 +5,7 @@ const client = new Discord.Client();
 const prefix = config.prefix;
 const color = "#303135";
 
-client.login(config.token);
+client.login("ODM2OTcyOTAxMTk4MjAwOTA0.YIlxwQ.JskSdHTvvJoEd6abDAARWEGCN_w");
 
 
 client.on('ready', () => {
