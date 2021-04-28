@@ -25,7 +25,7 @@ const DarkMan = new Discord.Client();
 const prefix = "D!";
 
 
-DarkMan.login("");
+DarkMan.login("Nzc4NDE5MTcyODcwNTg2Mzg5.X7RtWQ.VqnMl49ICBd8Fz465YJ5x_YzLdg");
 DarkMan.on("ready", async () => {
   console.log(`Logged in as ${DarkMan.user.username}!`);
   DarkMan.user.setStatus("ONLINE");
@@ -67,14 +67,14 @@ const embed = new Discord.MessageEmbed()
 /////////// code welcome
 DarkMan.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "・┊welcome"
+    channel => channel.name === "rules"
   );
   let DarkMan = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
-    .setAuthor(`Welcome Bot`, `https://cdn.discordapp.com/avatars/828218881989935105/479953e51dadf4f38c5bc72c912193c5.webp?size=1024`)
-    .setColor("RANDOM")
+    .setAuthor(`${member.guild.name}`, ``)
+    .setColor("RANDOM") 
     .setThumbnail(DarkMan)
     .addField(
       "**name** : ",
