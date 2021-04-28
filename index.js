@@ -13,7 +13,7 @@ client.on('ready', () => {
     client.user.setPresence({
         activity: {
             type: "PLAYING",
-            name: `Mr.Fox Development`
+            name: `Mr.xumar`
         }, 
         status: "idle"
     })
@@ -27,7 +27,7 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", member => {
   const channel = member.guild.channels.cache.find(
-    channel => channel.name === "┃ᴡᴇʟᴄᴏᴍᴇ"
+    channel => channel.name === "☀┃𝖶𝖾𝗅𝖼𝗈𝗆𝖾"
   );
   let DarkMan = member.user.avatarURL();
   if (!channel) return;
@@ -42,7 +42,7 @@ client.on("guildMemberAdd", member => {
     .setColor(color) 
     .setImage("https://cdn.discordapp.com/attachments/701779288772444160/836964659831504946/image0.gif")
     .addField(
-      `</>`,`__[Mr.Fox](https://mrfox.ga/)__`)
+      `</>`,`__[xumar offical](https://discord.gg/Q4234CdZry)__`)
     
   channel.send(joinembed);
 });
