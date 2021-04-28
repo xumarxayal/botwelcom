@@ -25,7 +25,7 @@ const DarkMan = new Discord.Client();
 const prefix = "D!";
 
 
-DarkMan.login("Nzc4NDE5MTcyODcwNTg2Mzg5.X7RtWQ.VqnMl49ICBd8Fz465YJ5x_YzLdg");
+DarkMan.login("Nzc4NDE5MTcyODcwNTg2Mzg5.X7RtWQ.X7Vho0Lgdz4KatYibjbQu_3ao3s");
 DarkMan.on("ready", async () => {
   console.log(`Logged in as ${DarkMan.user.username}!`);
   DarkMan.user.setStatus("ONLINE");
@@ -73,11 +73,11 @@ DarkMan.on("guildMemberAdd", member => {
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
-    .setAuthor(`${member.guild.name}`, ``)
-    .setColor("RANDOM") 
+    .setAuthor(``, ``)
+    .setColor("#303135") 
     .addField(
-      "wellcome",
-      `> hello sir ${member} wellcome to
+      "wellcome",`
+      > hello sir ${member} wellcome to
       > __${member.guild.name}__ we hope you enjoy with us.`)
   channel.send(joinembed);
 });
