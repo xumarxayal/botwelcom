@@ -73,12 +73,14 @@ DarkMan.on("guildMemberAdd", member => {
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
-    .setAuthor(`${member.guild.name}`, `${member.guild.name}`)
+    .setAuthor(`${member.guild.name}`, `https://cdn.discordapp.com/attachments/827541229734592522/836962152430043186/image0.gif`)
     .setColor("#303135") 
     .addField(
       "wellcome",`
       > hello sir ${member} wellcome to
       > __${member.guild.name}__ we hope you enjoy with us.`)
+    .serImage("https://cdn.discordapp.com/attachments/701779288772444160/836964659831504946/image0.gif")
+  
   channel.send(joinembed);
 });
 
@@ -110,6 +112,7 @@ DarkMan.on("guildMemberRemove", member => {
       `${member.guild.memberCount}` + "member"
     )
     .setFooter(`${member.guild.name}`)
+
     .setTimestamp();
   channel.send(joinembed);
 });
