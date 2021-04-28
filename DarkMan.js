@@ -72,37 +72,21 @@ DarkMan.on("guildMemberAdd", member => {
   let DarkMan = member.user.avatarURL();
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
-    .setTitle(`hello sir`)
+    .setTitle(``)
     .setAuthor(`${member.guild.name}`, ``)
     .setColor("RANDOM") 
-    .setThumbnail(DarkMan)
-    .addField(
-      "**name** : ",
-      `${member}
-    ◈ ━━━━━━━ ⸙ ━━━━━━━ ◈`
-    )
     .addField(
       "wellcome",
-      `> ${member} wellcome to
-      > __${member.guild.name}__ we hope you enjoy with us.
-    ◈ ━━━━━━━ ⸙ ━━━━━━━ ◈`
-    )
-    .addField(
-      "**ID** :",
-      "**[" + `${member.id}` + "]**"
-    )
-    .addField(
-      "**All Member**",
-      `${member.guild.memberCount}
-      ◈ ━━━━━━━ ⸙ ━━━━━━━ ◈`
-    )
-    .addField("Server", `${member.guild.name}`, true)
-    .setFooter(`**${member.guild.name}**`)
-    .setTimestamp()
-    .setFooter(`${member.guild.name}`)
-    .setTimestamp();
+      `> hello sir ${member} wellcome to
+      > __${member.guild.name}__ we hope you enjoy with us.`)
   channel.send(joinembed);
 });
+
+
+
+
+
+
 ////////////// code left
 DarkMan.on("guildMemberRemove", member => {
   const channel = member.guild.channels.cache.find(
