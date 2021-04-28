@@ -73,7 +73,7 @@ DarkMan.on("guildMemberAdd", member => {
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
-    .setAuthor(``, ``)
+    .setAuthor(`${member.guild.name}`, `${member.guild.name}`)
     .setColor("#303135") 
     .addField(
       "wellcome",`
